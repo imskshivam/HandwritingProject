@@ -76,7 +76,7 @@ class DataLoader:
 
             # GT text are columns starting at 10
             # see the lines.txt and check where the GT text starts, in this case it is 10
-            gtText_list = lineSplit[9].split('|')
+            gtText_list = lineSplit[8].split('|')
             gtText = self.truncateLabel(' '.join(gtText_list), maxTextLen)
             chars = chars.union(set(list(gtText)))  ## taking the unique characters present
 
